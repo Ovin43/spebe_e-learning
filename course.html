@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Spebe</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:400,600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/index.css">
+
+  <style>
+   .courses-container .course-block .course-thumbnail {
+      padding-top: 60%;
+      background: center center no-repeat;
+      background-size: cover;
+    }
+    
+    
+    .video-thumbnail {
+      padding: 26% 0;
+      background: center center no-repeat;
+      background-size: cover;
+      text-align: center;
+    }
+    .video-thumbnail i {
+      font-size: 48px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="root d-flex flex-column">
+
+    <header id="main-header" class="d-flex align-items-center">
+      <a href="index.html" class="top-logo">
+        <img class="logo-desktop" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+        <img class="logo-mobile" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+      </a>
+      <div class="top-navigation flex-fill">
+        <a href="javascript:void(0)" class="nav-toggle d-none"><i class="fas fa-bars"></i></a>
+        <ul class="list-unstyled d-flex main-nav">
+          <li><a href="courses-list.html">Courses</a></li>
+          <li><a href="#main-footer">Contacts</a></li>
+          <li><a target="_blank" href="lesson.html">lesson</a></li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <a href="javascript:void(0)" class="user-toggle d-none"><i class="far fa-user"></i></a>
+        <ul class="list-unstyled d-flex user-nav">
+          <li class="has-submenu">
+            <a href="javascript:void(0)">
+              <div class="user-avatar" style="background: url(images/img.png);background-size: contain;"></div>
+              <span>Zoro</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="submenu d-none">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="checkout.html">Payments</a></li>
+              <li><div class="dropdown-divider"></div></li>
+              <li><a href="index.html">Current Session</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="top-search-bar">
+        <form>
+          <input type="text" class="d-none">
+          <button><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+
+    <main id="main-body" class="flex-fill">
+
+      <div class="top-search">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10">
+              <form>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">SEARCH</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="course-details">
+              
+              <h4 class="my-4">Digital Marketing</h4>
+              
+              <ul class="nav nav-pills mb-3">
+                <li class="nav-item"><a class="nav-link active" data-toggle="list" href="#home" role="tab">Course</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="list" href="#profile" role="tab">Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="list" href="#messages" role="tab">Course Content</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="list" href="#settings" role="tab">Reviews</a></li>
+              </ul>
+              <div class="tab-content bg-white p-4">
+                <div class="tab-pane active" id="home" role="tabpanel">
+                  <div class="inner-box">
+                    <p>Digital marketing, also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication. This includes not only email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.</p>
+                    <ul class="list-unstyled py-3 d-flex justify-content-center text-center student-list">
+                      <li class="px-3 border-left border-right"><strong>23,564</strong> <br> <small>Total Students</small></li>
+                      <li class="px-3 border-left border-right"><span class="text-warning">4.5 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fas fa-star-half-alt"></i></span> <br> <small>(1254 Rating)</small></li>
+                      <li class="px-3 border-left border-right"><strong>256</strong> <br> <small>Reviews</small></li>
+                    </ul>
+                    <h4>What are you going to learn?</h4>
+                    <ul class="fa-ul review-list">
+                      <li><i class="far fa-li fa-circle"></i> Adapt and make changes in real-time to reflect your advertising</li>
+                      <li><i class="far fa-li fa-circle"></i> You can also create targeted ads to ensure products and services reach an interested audience.</li>
+                      <li><i class="far fa-li fa-circle"></i> Using analytics, you can quickly tell how many people see your ads, how they react, and what action they take.</li>
+                    </ul>
+                    <h4>Requirements</h4>
+                    <ul class="Key points">
+                      <li>Taught by top companies and universities</li>
+                      <li>Affordable programs</li>
+                      <li>Apply your skills with hands-on projects </li>
+                      <li>learn on your own schedule</li>
+                      <li>Course videos and readings</li>
+                    </ul>
+                    <h4>Instructors</h4>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                      <!-- Student Block -->
+                      <div class="col mb-4">
+                        <div class="card profile-block text-center">
+                          <div class="card-body">
+                          <img class="img-fluid d-block m-auto" src="images/cover/cover-1.png" alt="">
+                          <strong class="d-block my-2">Stephane Smith</strong>
+                          <div class="small mb-3">Certified instructor in Digital Marketing</div>
+                          <a href="#" class="btn btn-sm btn-outline"style="background-color: rgb(255, 185, 0);">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Student Block -->
+                      <div class="col mb-4">
+                        <div class="card profile-block text-center">
+                          <div class="card-body">
+                            <img class="img-fluid d-block m-auto" src="images/cover/cover-2.jpg" alt="">
+                            <strong class="d-block my-2">Marvin Zona</strong>
+                            <div class="small mb-3">Certified instructor in Digital Marketing</div>
+                            <a href="#" class="btn btn-sm btn-outline"style="background-color: rgb(255, 185, 0);">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Student Block -->
+                      <div class="col mb-4">
+                        <div class="card profile-block text-center">
+                          <div class="card-body">
+                            <img class="img-fluid d-block m-auto" src="images/cover/cover-3.jpg" alt="">
+                            <strong class="d-block my-2">Dramij Armstrong</strong>
+                            <div class="small mb-3">Certified instructor in Digital Marketing</div>
+                            <a href="#" class="btn btn-sm btn-outline"style="background-color: rgb(255, 185, 0);">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel">
+                  <div class="inner-box bg-white">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+                      <!-- Student Block -->
+                      <div class="col mb-4">
+                        <div class="card profile-block text-center">
+                          <div class="card-body">
+                          <img class="img-fluid d-block m-auto" src="images/cover/cover-1.png" alt="">
+                          <strong class="d-block my-2">Stephane Smith</strong>
+                          <div class="small mb-3">Certified instructor in Digital Marketing</div>
+                          <a href="#" class="btn btn-sm btn-outline"style="background-color: rgb(255, 185, 0);">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Student Block -->
+                      <div class="col mb-4">
+                        <div class="card profile-block text-center">
+                          <div class="card-body">
+                            <img class="img-fluid d-block m-auto" src="images/cover/cover-2.jpg" alt="">
+                            <strong class="d-block my-2">Marvin Zona</strong>
+                            <div class="small mb-3">Certified instructor in Digital Marketing</div>
+                            <a href="#" class="btn btn-sm btn-outline"style="background-color: rgb(255, 185, 0);">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Student Block -->
+                      <div class="col mb-4">
+                        <div class="card profile-block text-center">
+                          <div class="card-body">
+                            <img class="img-fluid d-block m-auto" src="images/cover/cover-3.jpg" alt="">
+                            <strong class="d-block my-2">Dramij Armstrong</strong>
+                            <div class="small mb-3">Certified instructor in Digital Marketing</div>
+                            <a href="#" class="btn btn-sm btn-outline"style="background-color: rgb(255, 185, 0);">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Student Block -->
+                      <div class="col mb-4">
+                        <div class="card profile-block text-center">
+                          <div class="card-body">
+                            <img class="img-fluid d-block m-auto" src="images/cover/cover-4.jpg" alt="">
+                            <strong class="d-block my-2">Ewen Holmes</strong>
+                            <div class="small mb-3">Certified instructor in Digital Marketing</div>
+                            <a href="#" class="btn btn-sm btn-outline"style="background-color: rgb(255, 185, 0);">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="messages" role="tabpanel">
+                  <div class="inner-box bg-white">
+                    <h4> Module 1:Introduction to Digital Marketing</h4>
+                    <ul class="list-unstyled">
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>1.1</strong>  What is marketing?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 23 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>1.2</strong>  What is digital marketing?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 12 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>1.3</strong> Why are people going online?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 10 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>1.4</strong>  Key concepts of digital marketing</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 15 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>1.5</strong>  Benefits of digital marketing</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 20 min</span>
+                      </li>
+                    </ul>
+                    
+                    <h4>Module  2:  Website Design Guidelines</h4>
+                    <ul class="list-unstyled">
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>2.1</strong>  What is the Website?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 17 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>2.2</strong>  What is www?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 11 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>2.3</strong>  What are the different types of websites?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 7 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>2.4</strong>  Web page vs website</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 30 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>2.5</strong>  Difference between blog vs website</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 12 min</span>
+                      </li>
+                    </ul>
+                    
+                    <h4>Module 3: Domain Registration and Hosting</h4>
+                    <ul class="list-unstyled">
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>3.1</strong>  What is domain & subdomain name?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 8 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>3.2</strong> Parts of domain name</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 25 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>3.3</strong>  How to choose a domain name?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 17 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>3.4</strong>  What is the Protocol?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 13 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>3.5</strong> What is IP address</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 26 min</span>
+                      </li>
+                    </ul>
+                    
+                    <h4>Module 4: WordPress website creation</h4>
+                    <ul class="list-unstyled">
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>4.1</strong>  What is WordPress?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 19 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>4.2</strong> Understanding WordPress and it’s functioning?</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 14 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>4.3</strong>  Features of WordPress</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 29 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>4.4</strong> Advantages and disadvantages of WordPress</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 21 min</span>
+                      </li>
+                      <li class="d-flex align-items-center p-3">
+                        <i class="far fa-play-circle mr-2"></i>
+                        <span class="flex-fill"> <strong>4.5</strong>  com vs wordpress.org</span>
+                        <span> <i class="far fa-fw fa-clock"></i> 9 min</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="settings" role="tabpanel">
+                  <div class="inner-box bg-white">
+                    <ul class="list-unstyled">
+                        <li class="media mb-4">
+                          <img src="images/cover/cover-1.png" class="img-fluid mr-3" style="width: 15%; height:15%;">
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <strong class="mt-0 mb-1">Dana Armstrong</strong>
+                              <ul class="list-inline small">
+                                <li class="list-inline-item text-black-50"><i class="far fa-clock"></i> 2023/3/6</li>
+                                <li class="list-inline-item text-warning"><i class="far fa-star"></i> 5</li>
+                              </ul>
+                            </div>
+                              <p class="small font-italic">I'm delighted to have this course offered on Positive Psychology through Spebe ... I appreciate the format and set up of the course. The videos are very well done. A helpful as.</p>
+                            </div>
+                        </li>
+                        <li class="media mb-4">
+                          <img src="images/cover/cover-2.jpg" class="img-fluid mr-3" style="width: 15%; height:15%;">
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <strong class="mt-0 mb-1">Erin Holmes</strong>
+                              <ul class="list-inline small">
+                                <li class="list-inline-item text-black-50"><i class="far fa-clock"></i> 2023/1/15</li>
+                                <li class="list-inline-item text-warning"><i class="far fa-star"></i> 5</li>
+                              </ul>
+                            </div>
+                              <p class="small font-italic">I have nothing but good things to say about my experience with Spebe. I have loved the learning I have been able to do and look forward to taking many more classes with them .....</p>
+                            </div>
+                        </li>
+                        <li class="media mb-4">
+                          <img src="images/cover/cover-3.jpg" class="img-fluid mr-3"style="width: 15%; height:15%;">
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <strong class="mt-0 mb-1">Dramij Armstrong</strong>
+                              <ul class="list-inline small">
+                                <li class="list-inline-item text-black-50"><i class="far fa-clock"></i> 2023/5/25</li>
+                                <li class="list-inline-item text-warning"><i class="far fa-star"></i> 2</li>
+                              </ul>
+                            </div>
+                              <p class="small font-italic">No support if you get stuck. No help at all. They don't even have instructors reviewing your work. It's all peer grading. You're better buying books on the subject. Save your money and use a library card.</p>
+                            </div>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="card course-cta">
+              
+              <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                          allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/.Content-->
+                </div>
+              </div>
+              
+              <a href="/" class="video-thumbnail d-block text-center" style="background-image: url(images/study.jpg)" data-toggle="modal" data-target="#modal6">
+                <i class="far fa-play-circle"></i>
+              </a>
+              <div class="card-body text-center">
+                <p class="text-center mb-4"><i class="far fa-clock"></i> 23 Hours and 45 Minutes</p>
+                <h4>$89.5</h4>
+                <p>Spebe videos help educators take their courses to the next leve</p>
+                <hr>
+                <a href="cart.html" class="btn btn-block btn-lg" style="background-color: rgb(255, 185, 0);">Add to cart <i class="fa fa-fw fa-angle-right"></i> </a>
+                <a href="checkout.html" class="btn btn-block btn-lg btn-outline-primary">Buy this course <i class="fa fa-fw fa-angle-right"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </main>
+
+    <footer id="main-footer" class="d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-md footer-about text-center">
+            <img class="img-fluid" src="images/logo4.png" style="border-radius: 10px;">
+            <p class="small">“When it comes to the design of effective learning experiences, one provocative question is worth a hundred proclamations.” - Bernard Bull</p>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <ul class="fa-ul d-inline-block text-left">
+              <li><a href="/"><i class="fa fa-li fa-phone"></i> +91 8764983621</a></li>
+              <li><a href="/"><i class="far fa-li fa-envelope"></i> emailcont@examp.com</a></li>
+              <li><a href="/"><i class="fa fa-li fa-map-marker-alt"></i>Head of Instution <br>Office 3674387,pin . 45673, <br>India</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-sitemap text-center">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Spebe</a></li>
+              <li><a href="courses-list.html">Courses</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Check Out</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <h4>Social Networks</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="https://in.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

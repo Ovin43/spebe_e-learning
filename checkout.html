@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Spebe</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:400,600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/index.css">
+  
+  <style>
+    .summary-table {
+      width: 100%;
+    }
+    .summary-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+    .payment-method-card {
+      font-size: 12px;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <div class="root d-flex flex-column">
+
+    <header id="main-header" class="d-flex align-items-center">
+      <a href="index.html" class="top-logo">
+        <img class="logo-desktop" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+        <img class="logo-mobile" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+      </a>
+      <div class="top-navigation flex-fill">
+        <a href="javascript:void(0)" class="nav-toggle d-none"><i class="fas fa-bars"></i></a>
+        <ul class="list-unstyled d-flex main-nav">
+          <li><a href="courses-list.html">Courses</a></li>
+          <li><a href="#main-footer">Contacts</a></li>
+          <li><a target="_blank" href="lesson.html">lesson</a></li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <a href="javascript:void(0)" class="user-toggle d-none"><i class="far fa-user"></i></a>
+        <ul class="list-unstyled d-flex user-nav">
+          <li class="has-submenu">
+            <a href="javascript:void(0)">
+              <div class="user-avatar" style="background: url(images/img.png);background-size: contain;"></div>
+              <span>Zoro</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="submenu d-none">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="checkout.html">Payments</a></li>
+              <li><a href="index.html">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="top-search-bar">
+        <form>
+          <input type="text" class="d-none">
+          <button><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+
+    <main id="main-body" class="flex-fill">
+
+      <div class="container">
+        <div class="row justify-content-center py-4">
+          <div class="col-md-10">
+
+            <h3 clasS="my-4">Finalize your Purchase</h3>
+
+            <div class="checkout-process-list py-3">
+              <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link disabled active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" tabindex="-1" aria-disabled="true">Payment Method</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1" aria-disabled="true">Confirmation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false" tabindex="-1" aria-disabled="true">Ready</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card checkout-process-content">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-5 border-right cart-summary">
+                    <h4>Your Order</h4>
+                    <hr>
+                    <ul class="list-unstyled small">
+                      <li class="d-flex align-items-center mb-2">
+                        <div class="flex-fill">
+                          <strong class="d-block">Digital Marketing</strong>
+                          <small class="d-block">A course by Max</small>
+                        </div>
+                        <strong class="text-nowrap">$89.5</strong>
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        <div class="flex-fill">
+                          <strong class="d-block">Motion Graphics</strong>
+                          <small class="d-block">A course by Ramírez-Corzo</small>
+                        </div>
+                        <strong class="text-nowrap">$79.7</strong>
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        <div class="flex-fill">
+                          <strong class="d-block">Digital Marketing</strong>
+                          <small class="d-block">A course by Max</small>
+                        </div>
+                        <strong class="text-nowrap">$89.5</strong>
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        <div class="flex-fill">
+                          <strong class="d-block">Affinity Photo Foundations</strong>
+                          <small class="d-block">A course by Spebe</small>
+                        </div>
+                        <strong class="text-nowrap">$80</strong>
+                      </li>
+                    </ul>
+                    <hr>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between">
+                        <strong>Subtotal</strong>
+                        <span>$245.99</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Shipping</strong>
+                        <span>Free</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Total</strong>
+                        <span>$245.99</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-7 main-order-block">
+                    <div class="tab-content">
+                      <div class="tab-pane active" name="ult" id="home" role="tabpanel">
+                        <h4>Payment Method</h4>
+                        <hr>
+                        <div class="px-4">
+                          <div class="form-row justify-content-center payment-type-select">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="paymentOptions" id="paymentCard" value="card" checked>
+                              <label class="form-check-label" for="paymentCard"><i class="far fa-fw fa-credit-card"></i> Card</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="paymentOptions" id="paymentPaypal" value="paypal">
+                              <label class="form-check-label" for="paymentPaypal"><i class="fab fa-fw fa-cc-paypal"></i> PayPal</label>
+                            </div>
+                          </div>
+                          <hr>
+                        </div>
+                        <form class="card-payment-form">
+                          <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+                          </div>
+                          <div class="row">
+                            <div class="col-md-9">
+                              <label for="expDateMonth">Expiration date</label>
+                              <div class="row">
+                                <div class="form-group col-sm-6">
+                                  <select type="text" class="form-control" id="expDateMonth">
+                                    <option selected disabled>Month</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <select type="text" class="form-control" id="expDateYear">
+                                    <option selected disabled>Year</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3">
+                              <label for="CardCCV">CCV <span data-toggle="tooltip" data-placement="top" title="<img class='img-fluid' style='width: 40px' src='https://navigateaba.businesscatalyst.com/myimg/buttons/cvv-caption_new.png'>"><i class="far fa-question-circle"></i></span></label>
+                              <input type="password" class="form-control" id="CardCCV">
+                            </div>
+                          </div>
+                        </form>
+                        <form class="paypal-payment-form d-none text-center">
+                          <img class="img-fluid m-auto" src="http://placehold.it/300x400&text=PayPal">
+                        </form>
+                      </div>
+                      <div class="tab-pane" name="ult" id="profile" role="tabpanel">
+                        <h4>Confirmation</h4>
+                        <hr>
+                        <table class="summary-table">
+                          <tbody>
+                            <tr>
+                              <td class="text-right"><strong>Order No</strong></td>
+                              <td>1029384756</td>
+                              <td class="text-right"><a href="/">view order</a></td>
+                            </tr>
+                            <tr>
+                              <td class="text-right"><strong>Date of purchase:</strong></td>
+                              <td>2023/04/13</td>
+                              <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3" class="text-right"><strong>Purchase</strong></td>
+                              <td>Subtotal</td>
+                              <td class="text-right">$964.24</td>
+                            </tr>
+                            <tr>
+                              <td>Taxes (16%)</td>
+                              <td class="text-right">$250.76</td>
+                            </tr>
+                            <tr>
+                              <td><span class="h6">Total</span></td>
+                              <td class="text-right"><span class="h6">$245.99</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="card my-3 w-100 payment-method-card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between pb-2 mb-2 border-bottom">
+                              <strong>Payment method</strong>
+                              <a class="px-1" href="javascript:void(0);"><i class="fas fa-fw fa-edit"></i>To edit</a>
+                            </div>
+                            <div class="flex-fill">
+                              <small class="d-block text-muted">Debit / credit card</small>
+                              <span class="h6 font-weight-bold">VISA</span>
+                              <h4 class="text-black-50 my-4">**** **** **** 6789</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane text-center" name="ult" id="messages" role="tabpanel">
+                        <h3>Thanks for your purchase!</h3>
+                        <hr>
+                        <img src="http://placehold.it/250x250" class="img-fluid my-3">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><a class="btn btn-outline-secondary" href="/"><i class="fas fa-fw fa-receipt"></i> Generate bill</a></li>
+                          <li class="list-inline-item"><a class="btn btn-outline-secondary" href="/"><i class="far fa-fw fa-clipboard"></i> View Order</a></li>
+                          <li class="list-inline-item"><a class="btn btn-outline-secondary" href="/"><i class="fa fa-fw fa-arrow-right"></i> Go to Course</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-primary btn-continue" data-toggle="tab" href="#profile" role="tab" onclick="$('.btn-continue').addClass('d-none'); $('.btn-finish').removeClass('d-none');">Continue<i class="fa fa-fw fa-angle-right"></i></button>
+                    <button class="btn btn-success btn-finish d-none" data-toggle="tab" href="#messages" role="tab" onclick="$('.btn-finish').addClass('d-none');">Checkout </button>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer id="main-footer" class="d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-md footer-about text-center">
+            <img class="img-fluid" src="images/logo4.png" style="border-radius: 10px;">
+            <p class="small">“When it comes to the design of effective learning experiences, one provocative question is worth a hundred proclamations.” - Bernard Bull</p>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <ul class="fa-ul d-inline-block text-left">
+              <li><a href="/"><i class="fa fa-li fa-phone"></i> +91 8764983621</a></li>
+              <li><a href="/"><i class="far fa-li fa-envelope"></i> emailcont@examp.com</a></li>
+              <li><a href="/"><i class="fa fa-li fa-map-marker-alt"></i>Head of Instution <br>Office 3674387,pin . 45673, <br>India</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-sitemap text-center">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Spebe</a></li>
+              <li><a href="courses-list.html">Courses</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Check Out</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <h4>Social Networks</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="https://in.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+  
+  <script>
+    $("[name='paymentOptions']").on('change',function(){
+      
+      var selectedPayment = $("[name='paymentOptions']:checked").val();
+      console.log( selectedPayment );
+      
+      if( selectedPayment == "paypal" ) {
+        
+        $(".card-payment-form").addClass("d-none");
+        $(".paypal-payment-form").removeClass("d-none");
+        
+      } else {
+        
+        $(".paypal-payment-form").addClass("d-none");
+        $(".card-payment-form").removeClass("d-none");
+        
+      }
+      
+    });
+
+    // $("[name='ult']").on('change',function(){
+      
+    //   var selectedPayment = $("[name='ult']:checked").val();
+    //   console.log( selectedPayment );
+      
+    //   if( selectedPayment == "paypal" ) {
+        
+    //     $(".card-payment-form").addClass("d-none");
+    //     $(".paypal-payment-form").removeClass("d-none");
+        
+    //   } else {
+        
+    //     $(".paypal-payment-form").addClass("d-none");
+    //     $(".card-payment-form").removeClass("d-none");
+        
+    //   }
+      
+    // });
+    
+    $(".btn-finish").on("click",function(){
+      $(".cart-summary").addClass("d-none");
+      $(".main-order-block").removeClass("col-sm-7").addClass("col-sm-12");
+    });
+  </script>
+</body>
+
+</html>

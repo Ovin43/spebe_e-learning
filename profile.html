@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Spebe</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:400,600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/index.css">
+
+  <style>
+    .profile-container {
+      min-height: 400px;
+    }
+    .profile-sidebar {
+      flex: 0 0 300px;
+      margin: 20px 0;
+    }
+    .profile-sidebar .profile-avatar {
+      width: 150px; height: 150px;
+      margin: 20px auto;
+      background: center center no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+    }
+    .profile-main-content {
+      flex: 1 1 auto;
+      margin: 20px 0 20px 20px;
+    }
+    
+    .profile-course-list .course-thumbnail {
+      flex: 0 0 150px;
+      margin: -20px 0 -20px -20px;
+      background: center center no-repeat;
+      background-size: cover;
+    }
+    
+    .payment-items li .list-thumbnail {
+      width: 50px; height: 50px;
+    }
+    
+  </style>
+
+</head>
+
+<body>
+  <div class="root d-flex flex-column">
+
+    <header id="main-header" class="d-flex align-items-center">
+      <a href="index.html" class="top-logo">
+        <img class="logo-desktop" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+        <img class="logo-mobile" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+      </a>
+      <div class="top-navigation flex-fill">
+        <a href="javascript:void(0)" class="nav-toggle d-none"><i class="fas fa-bars"></i></a>
+        <ul class="list-unstyled d-flex main-nav">
+          <li><a href="courses-list.html">Courses</a></li>
+          <li><a href="#main-footer">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <a href="javascript:void(0)" class="user-toggle d-none"><i class="far fa-user"></i></a>
+        <ul class="list-unstyled d-flex user-nav">
+          <li class="has-submenu">
+            <a href="javascript:void(0)">
+              <div class="user-avatar" style="background: url(images/img.png);background-size: contain;"></div>
+              <span>Zoro</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="submenu d-none">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="checkout.html">Payments</a></li>
+              <li><div class="dropdown-divider"></div></li>
+              <li><a href="index.html">Current Session</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="top-search-bar">
+        <form>
+          <input type="text" class="d-none">
+          <button><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+
+    <main id="main-body" class="flex-fill">
+
+      <div class="container profile-container d-flex">
+        
+        <div class="card profile-sidebar">
+          <div class="profile-avatar" style="background: url(images/img.png);background-size: contain;"></div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Zoro</h5>
+            <p>Zoro@anime.com<p>
+          </div>
+          <div class="list-group list-group-flush text-center" role="tablist">
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#profile-account" role="tab">Account</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile-courses" role="tab">Courses</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile-payments" role="tab">Payments</a>
+          </div>
+        </div>
+        
+        <div class="profile-main-content bg-white border">
+          <div class="tab-content p-4" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="profile-account" role="tabpanel" aria-labelledby="list-home-list">
+              
+              <h4 class="border-bottom py-3 mb-4">Account</h4>
+              
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label class="small font-weight-bold">Names</label>
+                  <p class="text-black-50 form-control-static">Diego Francisco</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label class="small font-weight-bold">Surnames</label>
+                  <p class="text-black-50 form-control-static">Vutek Arias</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label class="small font-weight-bold">Mail</label>
+                  <p class="text-black-50 form-control-static">dvutek@novut.com</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="small font-weight-bold">City</label>
+                  <p class="text-black-50 form-control-static">Monterrey</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label class="small font-weight-bold">State</label>
+                  <p class="text-black-50 form-control-static">Nuevo León</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label class="small font-weight-bold">CP</label>
+                  <p class="text-black-50 form-control-static">47385</p>
+                </div>
+              </div>
+              
+              <h4 class="border-bottom py-3 mb-4">Billing information</h4>
+              
+              <div class="form-row">
+              <div class="col-md-7 mb-3">
+                <label class="small font-weight-bold">Company Name</label>
+                <p class="text-black-50 form-control-static">Empresa SA de CV</p>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label class="small font-weight-bold">RFC</label>
+                <p class="text-black-50 form-control-static">VECJ880326567</p>
+              </div>
+              </div>
+              <div class="form-row">
+              <div class="col-md-8 mb-3">
+                <label class="small font-weight-bold">Address</label>
+                <p class="text-black-50 form-control-static">Calle libertadores</p>
+              </div>
+              <div class="col-md-2 mb-3">
+                <label class="small font-weight-bold">N° Ext.</label>
+                <p class="text-black-50 form-control-static">2389</p>
+              </div>
+              <div class="col-md-2 mb-3">
+                <label class="small font-weight-bold">N° Int.</label>
+                <p class="text-black-50 form-control-static">12</p>
+              </div>
+              </div>
+              <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label class="small font-weight-bold">City</label>
+                <p class="text-black-50 form-control-static">Monterrey</p>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="small font-weight-bold">State</label>
+                <p class="text-black-50 form-control-static">Nuevo León</p>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="small font-weight-bold">CP</label>
+                <p class="text-black-50 form-control-static">47385</p>
+              </div>
+              </div>
+              
+            </div>
+            
+            <div class="tab-pane fade" id="profile-courses" role="tabpanel" aria-labelledby="list-home-list">
+              
+              <h4 class="border-bottom py-3 mb-4">Courses</h4>
+              <ul class="list-unstyled profile-course-list">
+               
+                <li class="mb-3">
+                  <div class="card d-flex">
+                    <div class="card-body d-flex align-items-center">
+                      <div class="course-thumbnail align-self-stretch" style="background-image: url(images/course/course-4.png)"></div>
+                      <div class="flex-fill px-3 border-right">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <strong>Digital Marketing</strong>
+                          <small class="text-secondary"><i class="fa fa-fw fa-clock"></i> 24Hours</small>
+                        </div>
+                        <p class="my-2">Become a growth hacker! This course is used by teams at PayPal®,
+                          IBM®, Citibank® & many organizations..</p>
+                      </div>
+                      <div class="text-center">
+                        <strong>$89.5</strong>
+                        <a href="/" class="btn btn-secondary">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="mb-3">
+                  <div class="card d-flex">
+                    <div class="card-body d-flex align-items-center">
+                      <div class="course-thumbnail align-self-stretch" style="background-image: url(images/course/course-3.png)"></div>
+                      <div class="flex-fill px-3 border-right">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <strong>Javascript for Beginners</strong>
+                          <small class="text-secondary"><i class="fa fa-fw fa-clock"></i> 8Hours</small>
+                        </div>
+                        <p class="my-2">Learn javascript and supercharge your web design with this
+                          Javascript for beginners training.</p>
+                      </div>
+                      <div class="text-center">
+                        <strong>$20.2</strong>
+                        <a href="/" class="btn btn-secondary">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="mb-3">
+                  <div class="card d-flex">
+                    <div class="card-body d-flex align-items-center">
+                      <div class="course-thumbnail align-self-stretch" style="background-image: url(images/course/course-5.png)"></div>
+                      <div class="flex-fill px-3 border-right">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <strong>Affinity Photo Foundations</strong>
+                          <small class="text-secondary"><i class="fa fa-fw fa-clock"></i> 26Hours</small>
+                        </div>
+                        <p class="my-2">The best selling beginners guide to Affinity Photo - complete with
+                          a 50 page PDF to aid your study!</p>
+                      </div>
+                      <div class="text-center">
+                        <strong>$80</strong>
+                        <a href="/" class="btn btn-secondary">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                
+              </ul>
+            
+            </div>
+            
+            <div class="tab-pane fade" id="profile-payments" role="tabpanel" aria-labelledby="list-home-list">
+            
+              <h4 class="border-bottom py-3 mb-4">Payments</h4>
+              <ul class="list-unstyled">
+                <li class="payment-item p-2 mb-4 bg-light">
+                  <div class="payment-concept w-100 d-flex justify-content-between align-items-center">
+                    <p> <strong>Order C3414493T2245814</strong><br><span>23/02/2023</span> · <span>Total US$ 160.9</span> </p>
+                    <a href="/" class="btn btn-primary text-nowrap">Request Invoice</a>
+                  </div>
+                  <ul class="list-unstyled payment-items m-2">
+                    <li class="d-flex align-items-center border-top p-2">
+                      <div class="list-thumbnail mr-2" style="background-image: url(images/course/course-5.png)"></div>
+                      <span class="flex-fill">Affinity Photo Foundations<br><small>A course by Spebe</small></span>
+                      <div><span>US$ 80 </span></div>
+                    </li>
+                    <li class="d-flex align-items-center border-top p-2">
+                      <div class="list-thumbnail mr-2" style="background-image: url(images/course/course-6.png)"></div>
+                      <span class="flex-fill">Motion Graphics<br><small>A course by Ramírez-Corzo</small></span>
+                      <div><span>US$ 79.7</span></div>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li class="payment-item p-2 mb-4 bg-light">
+                  <div class="payment-concept w-100 d-flex justify-content-between align-items-center">
+                    <p> <strong>Order C3414493T2245814</strong><br><span>23/02/2023</span> · <span>Total US$ 160.9</span> </p>
+                    <a href="/" class="btn btn-primary text-nowrap">Request Invoice</a>
+                  </div>
+                  <ul class="list-unstyled payment-items m-2">
+                    <li class="d-flex align-items-center border-top p-2">
+                      <div class="list-thumbnail mr-2" style="background-image: url(images/course/course-5.png)"></div>
+                      <span class="flex-fill">Affinity Photo Foundations<br><small>A course by Spebe</small></span>
+                      <div><span>US$ 80 </span></div>
+                    </li>
+                    <li class="d-flex align-items-center border-top p-2">
+                      <div class="list-thumbnail mr-2" style="background-image: url(images/course/course-6.png)"></div>
+                      <span class="flex-fill">Motion Graphics<br><small>A course by Ramírez-Corzo</small></span>
+                      <div><span>US$ 79.7</span></div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            
+            </div>
+          </div>          
+        </div>
+        
+      </div>
+
+    </main>
+
+    <footer id="main-footer" class="d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-md footer-about text-center">
+            <img class="img-fluid" src="images/logo4.png" style="border-radius: 10px;">
+            <p class="small">“When it comes to the design of effective learning experiences, one provocative question is worth a hundred proclamations.” - Bernard Bull</p>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <ul class="fa-ul d-inline-block text-left">
+              <li><a href="/"><i class="fa fa-li fa-phone"></i> +91 8764983621</a></li>
+              <li><a href="/"><i class="far fa-li fa-envelope"></i> emailcont@examp.com</a></li>
+              <li><a href="/"><i class="fa fa-li fa-map-marker-alt"></i>Head of Instution <br>Office 3674387,pin . 45673, <br>India</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-sitemap text-center">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Spebe</a></li>
+              <li><a href="courses-list.html">Courses</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Check Out</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <h4>Social Networks</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="https://in.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+  
+  <script>
+    $(window).on("load",function(){
+      var url = document.location.toString();
+      if (url.match('#')) {
+       $('.list-group-flush a[href="#' + url.split('#')[1] + '"]').tab('show'); 
+      }
+    });
+  </script>
+  
+</body>
+
+</html>

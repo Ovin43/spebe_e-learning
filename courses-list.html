@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Spebe</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:400,600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/index.css">
+
+  <style>
+   .courses-container .course-block .course-thumbnail {
+      padding-top: 60%;
+      background: center center no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="root d-flex flex-column">
+
+    <header id="main-header" class="d-flex align-items-center">
+      <a href="index.html" class="top-logo">
+        <img class="logo-desktop" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+        <img class="logo-mobile" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+      </a>
+      <div class="top-navigation flex-fill">
+        <a href="javascript:void(0)" class="nav-toggle d-none"><i class="fas fa-bars"></i></a>
+        <ul class="list-unstyled d-flex main-nav">
+          <li><a href="courses-list.html">Courses</a></li>
+          <li><a href="#main-footer">Contacts</a></li>
+          <li><a target="_blank" href="lesson.html">lesson</a></li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <a href="javascript:void(0)" class="user-toggle d-none"><i class="far fa-user"></i></a>
+        <ul class="list-unstyled d-flex user-nav">
+          <li class="has-submenu">
+            <a href="javascript:void(0)">
+              <div class="user-avatar" style="background: url(images/img.png);background-size: contain;"></div>
+              <span>Zoro</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="submenu d-none">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="checkout.html">Payments</a></li>
+              <li><a href="index.html">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="top-search-bar">
+        <form>
+          <input type="text" class="d-none">
+          <button><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+
+    <main id="main-body" class="flex-fill">
+
+      <div class="top-search">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10">
+              <form>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">SEARCH</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+
+            <div class="d-flex justify-content-between mb-4">
+              <h4>Courses that we <a style="color: rgb(255, 185, 0);">OFFER</a></h4>
+              <form class="d-flex align-items-center">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary"><i class="fas fa-th"></i></button>
+                  <button type="button" class="btn btn-secondary"><i class="fas fa-th-list"></i></button>
+                </div>
+                <select class="form-control ml-2" id="exampleFormControlSelect1">
+                  <option>A &mdash; Z</option>
+                  <option>Z &mdash; A</option>
+                  <option>Rising Price</option>
+                  <option>Descending Price</option>
+                  <option>Most Relevant</option>
+                </select>
+              </form>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-4 row-cols-md-3 courses-container course-grid">
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-6.png);background-size:cover;"></div>
+                <div class="card-body">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between">
+                      <strong>Motion Graphics</strong>
+                      <span style="padding-right: 5px;padding-left:5px;">18Hours</span>
+                    </div>
+                    <p style="padding-top: 10px;">Using adobe after effects create beautiful VFX Visual Effects,And
+                      Cinema4D is a 3D modeling that’s more advanced..</p>
+                      <div class="d-flex justify-content-between">
+                        <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                        <span style="padding-top: 10px;padding-right: 5px;">$79.7</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-5.png);background-size:cover;"></div>
+                <div class="card-body">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between">
+                      <strong>Affinity Photo Foundations</strong>
+                      <span style="padding-right: 5px;padding-left:5px;">26Hours</span>
+                    </div>
+                    <p style="padding-top: 10px;">The best selling beginners guide to Affinity Photo - complete with
+                      a 50 page PDF to aid your study!</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                      <span style="padding-top: 10px;padding-right: 5px;">$80</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-4.png);background-size:cover;"></div>
+                <div class="card-body">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between">
+                      <strong>Digital Marketing</strong>
+                      <span style="padding-right: 5px;padding-left:5px;">24Hours</span>
+                    </div>
+                    <p style="padding-top: 10px;">Become a growth hacker! This course is used by teams at PayPal®,
+                      IBM®, Citibank® & many organizations.</p>
+                      <div class="d-flex justify-content-between">
+                        <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                        <span style="padding-top: 10px;padding-right: 5px;">$89.5.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-3.png);background-size:cover;"></div>
+                <div class="card-body">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between">
+                      <strong>Javascript for Beginners</strong>
+                      <span style="padding-right: 5px;padding-left:5px;">8Hours</span>
+                    </div>
+                    <p style="padding-top: 10px;">Learn javascript and supercharge your web design with this
+                      Javascript for beginners training..</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                      <span style="padding-top: 10px;padding-right: 5px;">$20.2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-2.png);background-size:cover;"></div>
+                <div class="card-body">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between">
+                      <strong>Learn and Understand NodeJS</strong>
+                      <span style="padding-right: 5px;padding-left:5px;">12Hours</span>
+                    </div>
+                    <p style="padding-top: 10px;">Dive deep under the hood of NodeJS. Learn V8, Express, the MEAN
+                      stack...</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                      <span style="padding-top: 10px;padding-right: 5px;">$50.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-4.png);background-size:cover;"></div>
+                  <div class="card-body">
+                    <div class="course-content">
+                      <div class="d-flex justify-content-between">
+                        <strong>Digital Marketing</strong>
+                        <span style="padding-right: 5px;padding-left:5px;">24Hours</span>
+                      </div>
+                      <p style="padding-top: 10px;">Become a growth hacker! This course is used by teams at PayPal®,
+                        IBM®, Citibank® & many organizations.</p>
+                        <div class="d-flex justify-content-between">
+                          <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                          <span style="padding-top: 10px;padding-right: 5px;">$89.5</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-3.png);background-size:cover;"></div>
+                <div class="card-body">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between">
+                      <strong>Javascript for Beginners</strong>
+                      <span style="padding-right: 5px;padding-left:5px;">8Hours</span>
+                    </div>
+                    <p style="padding-top: 10px;">Learn javascript and supercharge your web design with this
+                      Javascript for beginners training..</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                      <span style="padding-top: 10px;padding-right: 5px;">$20.2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-5.png);background-size:cover;"></div>
+                <div class="card-body">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between">
+                      <strong>Affinity Photo Foundations</strong>
+                      <span style="padding-right: 5px;padding-left:5px;">26Hours</span>
+                    </div>
+                    <p style="padding-top: 10px;">The best selling beginners guide to Affinity Photo - complete with
+                      a 50 page PDF to aid your study!</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                      <span style="padding-top: 10px;padding-right: 5px;">$80</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card course-block">
+                  <div class="course-thumbnail" style="background-image: url(images/course/course-6.png);background-size:cover;"></div>
+                <div class="card-body">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between">
+                      <strong>Motion Graphics</strong>
+                      <span style="padding-right: 5px;padding-left:5px;">18Hours</span>
+                    </div>
+                    <p style="padding-top: 10px;">Using adobe after effects create beautiful VFX Visual Effects,And
+                      Cinema4D is a 3D modeling that’s more advanced..</p>
+                      <div class="d-flex justify-content-between">
+                        <a href="course.html" class="btn btn-secondary" style="background-color:rgb(255, 185, 0) ;">View Details</a>
+                        <span style="padding-top: 10px;padding-right: 5px;">$79.7</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <hr>
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            
+          </div>
+          <div class="col-sm-3">
+            <h5>Course list</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a class="d-flex align-items-center mb-2">
+                  <img class="mr-2" src="images/course/course-1.png" style="width: 15%; height:15%;">
+                 <strong class="d-block">UI/UX Design Principles</strong>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center mb-2">
+                  <img class="mr-2" src="images/course/course-2.png"style="width: 15%; height:15%;">
+                 <strong class="d-block">Learn and Understand NodeJS</strong>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center mb-2">
+                  <img class="mr-2" src="images/course/course-3.png" style="width: 15%; height:15%;">
+                 <strong class="d-block">Javascript for Beginners</strong>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center mb-2">
+                  <img class="mr-2" src="images/course/course-4.png"style="width: 15%; height:15%;">
+                 <strong class="d-block">Digital Marketing</strong>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex align-items-center mb-2">
+                  <img class="mr-2" src="images/course/course-5.png" style="width: 15%; height:15%;">
+                 <strong class="d-block">Affinity Photo Foundations</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer id="main-footer" class="d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-md footer-about text-center">
+            <img class="img-fluid" src="images/logo4.png" style="border-radius: 10px;">
+            <p class="small">“When it comes to the design of effective learning experiences, one provocative question is worth a hundred proclamations.” - Bernard Bull</p>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <ul class="fa-ul d-inline-block text-left">
+              <li><a href="/"><i class="fa fa-li fa-phone"></i> +91 8764983621</a></li>
+              <li><a href="/"><i class="far fa-li fa-envelope"></i> emailcont@examp.com</a></li>
+              <li><a href="/"><i class="fa fa-li fa-map-marker-alt"></i>Head of Instution <br>Office 3674387,pin . 45673, <br>India</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-sitemap text-center">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Spebe</a></li>
+              <li><a href="courses-list.html">Courses</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Check Out</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <h4>Social Networks</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="https://in.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

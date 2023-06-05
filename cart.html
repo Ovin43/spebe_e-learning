@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Spebe</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:400,600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/index.css">
+
+  <style>
+    .cart-item > * {
+    }
+    .cart-item .item-thumbnail {
+      width: 100px; height: 100px;
+      background: center center no-repeat;
+      background-size: cover; 
+    }
+    .cart-item .item-description {
+      padding: 0 10px;
+    }
+    .cart-item .item-description > * {
+      display: block;
+      font-size: 12px;
+    }
+    .cart-item .item-description strong {
+      font-size: 16px;
+    }
+    
+    .sub-items-list {
+      padding-left: 50px !important;
+    }
+    .sub-items-list .sub-list-item {
+      padding: 10px 0;
+      color: #999;
+      font-size: 11px;
+    }
+    .sub-items-list .sub-list-item strong {
+      font-size: 13px;
+    }
+    .sub-items-list .sub-list-item .item-thumbnail {
+       width: 60px; height: 60px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="root d-flex flex-column">
+
+    <header id="main-header" class="d-flex align-items-center">
+      <a href="index.html" class="top-logo">
+        <img class="logo-desktop" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+        <img class="logo-mobile" src="images/logo4.png" title="" alt="" style="border-radius: 10%;">
+      </a>
+      <div class="top-navigation flex-fill">
+        <a href="javascript:void(0)" class="nav-toggle d-none"><i class="fas fa-bars"></i></a>
+        <ul class="list-unstyled d-flex main-nav">
+          <li><a href="courses-list.html">Courses</a></li>
+          <li><a href="#main-footer">Contacts</a></li>
+          <li><a target="_blank" href="lesson.html">lesson</a></li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <a href="javascript:void(0)" class="user-toggle d-none"><i class="far fa-user"></i></a>
+        <ul class="list-unstyled d-flex user-nav">
+          <li class="has-submenu">
+            <a href="javascript:void(0)">
+              <div class="user-avatar" style="background: url(images/img.png);background-size: contain;"></div>
+              <span>Zoro</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="submenu d-none">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="checkout.html">Payments</a></li>
+              <li><a href="index.html">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="top-search-bar">
+        <form>
+          <input type="text" class="d-none">
+          <button><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+
+    <main id="main-body" class="flex-fill">
+
+      <div class="container">
+        
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            <h3 clasS="my-4">Shopping Cart</h3>
+            <div class="card my-4 cart-container">
+              <div class="card-body cart-list">
+                <ul class="list-unstyled">
+                  
+                  <li class="border-bottom cart-item py-3">
+                    <div class="d-flex align-items-center">
+                      <div class="item-thumbnail" style="background-image: url(images/course/course-4.png)"></div>
+                      <div class="flex-fill item-description">
+                        <strong>Digital Marketing</strong>
+                        <small>A course by Max</small>
+                        <span class="discount text-danger">57% OFF <s>US$ 89.5</s></span>
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fas fa-volume-up text-black-50"></i> English</li>
+                          <li class="list-inline-item"><i class="far fa-closed-captioning"></i> English,French,Japanese</li>
+                        </ul>
+                      </div>
+                      <div class="item-price p-2">$50.99</div>
+                      <a href="/" class="p-2"><i class="fa fa-times"></i></a>
+                    </div>
+                    <ul class="list-unstyled p-3 sub-items-list">
+                      <li>
+                        <div class="d-flex align-items-center sub-list-item">
+                          <div class="item-thumbnail" style="background-image: url(images/course/course-4.png)"></div>
+                          <div class="flex-fill item-description">
+                            <strong>Module 1:Introduction to Digital Marketing</strong>
+                            <small>A course by Max</small>
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fas fa-volume-up text-black-50"></i> English</li>
+                              <li class="list-inline-item"><i class="far fa-closed-captioning"></i> English,French,Japanese</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center sub-list-item">
+                          <div class="item-thumbnail" style="background-image: url(images/course/course-4.png)"></div>
+                          <div class="flex-fill item-description">
+                            <strong>Module  2:  Website Design Guidelines</strong>
+                            <small>A course by Max</small>
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fas fa-volume-up text-black-50"></i> English</li>
+                              <li class="list-inline-item"><i class="far fa-closed-captioning"></i> English,French,Japanese</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center sub-list-item">
+                          <div class="item-thumbnail" style="background-image: url(images/course/course-4.png)"></div>
+                          <div class="flex-fill item-description">
+                            <strong>Module 3: Domain Registration and Hosting</strong>
+                            <small>A course by Max</small>
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fas fa-volume-up text-black-50"></i> English</li>
+                              <li class="list-inline-item"><i class="far fa-closed-captioning"></i> English,French,Japanese</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center sub-list-item">
+                          <div class="item-thumbnail" style="background-image: url(images/course/course-4.png)"></div>
+                          <div class="flex-fill item-description">
+                            <strong>Module 4: WordPress website creation</strong>
+                            <small>A course by Max</small>
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fas fa-volume-up text-black-50"></i> English</li>
+                              <li class="list-inline-item"><i class="far fa-closed-captioning"></i> English,French,Japanese</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="border-bottom cart-item">
+                    <div class="d-flex align-items-center py-3">
+                      <div class="item-thumbnail" style="background-image: url(images/course/course-6.png)"></div>
+                      <div class="flex-fill item-description">
+                        <strong>Motion Graphics</strong>
+                        <small>A course by Ramírez-Corzo</small>
+                        <span class="discount text-danger">78% OFF. <s>US$ 79.7</s></span>
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fas fa-volume-up text-black-50"></i> English</li>
+                          <li class="list-inline-item"><i class="far fa-closed-captioning"></i> English,French,Japanese</li>
+                        </ul>
+                      </div>
+                      <div class="item-price p-2">$40.1 </div>
+                      <a href="/" class="p-2"><i class="fa fa-times"></i></a>
+                    </div>
+                  </li>
+                  
+                  <li class="border-bottom cart-item">
+                    <div class="d-flex align-items-center py-3">
+                      <div class="item-thumbnail" style="background-image: url(images/course/course-5.png)"></div>
+                      <div class="flex-fill item-description">
+                        <strong>Affinity Photo Foundations</strong>
+                        <small>A course by Spebe</small>
+                        <span class="discount text-danger">75% OFF. <s>US$ 80</s></span>
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fas fa-volume-up text-black-50"></i> English</li>
+                          <li class="list-inline-item"><i class="far fa-closed-captioning"></i> English,French,Japanese</li>
+                        </ul>
+                      </div>
+                      <div class="item-price p-2">$65.5</div>
+                      <a href="/" class="p-2"><i class="fa fa-times"></i></a>
+                    </div>
+                  </li>
+                
+                </ul>
+              </div>
+              <div class="card-body d-flex justify-content-between pt-0 cart-total">
+                <div class="form-group">
+                  <label class="small">Discount code</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="text-right">
+                  <ul class="list-unstyled">
+                    <li><strong>Subtotal US$ 250.80</strong></li>
+                    <li><span>Discount US$ -9.80</span></li>
+                    <li><span>Tax US$ 8.80</span></li>
+                    <li><h4>Total US$ 245.99</h4></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body border-top text-right">
+                  <a class="btn btn-primary" href="checkout.html"><i class="fas fa-shopping-basket"></i>Checkout <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </main>
+
+    <footer id="main-footer" class="d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-md footer-about text-center">
+            <img class="img-fluid" src="images/logo4.png" style="border-radius: 10px;">
+            <p class="small">“When it comes to the design of effective learning experiences, one provocative question is worth a hundred proclamations.” - Bernard Bull</p>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <ul class="fa-ul d-inline-block text-left">
+              <li><a href="/"><i class="fa fa-li fa-phone"></i> +91 8764983621</a></li>
+              <li><a href="/"><i class="far fa-li fa-envelope"></i> emailcont@examp.com</a></li>
+              <li><a href="/"><i class="fa fa-li fa-map-marker-alt"></i>Head of Instution <br>Office 3674387,pin . 45673, <br>India</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-sitemap text-center">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Spebe</a></li>
+              <li><a href="courses-list.html">Courses</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Check Out</a></li>
+            </ul>
+          </div>
+          <div class="col-md footer-contact text-center">
+            <h4>Social Networks</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="https://in.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
